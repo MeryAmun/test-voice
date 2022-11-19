@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================GRID STYLES =========================================*/
+.grid{
+    height: 50vh;
+    width: 100vw;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .header-button{
+    padding: 4px 8px;
+    background-color: rgb(65, 65, 228);
+    width:20%;
+    border-radius: 5px;
+    border: none;
+    margin-top: .5rem;
+    color: #fff;
+    cursor: pointer;
+    }
+  .grid-stack {
+    background: #fff;
+  }
+  
+  .grid-stack-item-content {
+    color: #2c3e50;
+    text-align: center;
+    border: 1px red dashed;
+  }
+  
+  .grid-stack.grid-stack-nested {
+    background: none;
+    /* background-color: red; */
+    /* take entire space */
+    position: absolute;
+    inset: 0; /* TODO change top: if you have content in nested grid */
+  }
+  
+  .grid-stack > .grid-stack-item.grid-stack-sub-grid > .grid-stack-item-content {
+    inset: 0 2px;
+    border: none;
+  }
+  
+  .grid-stack.grid-stack-nested {
+    background: none;
+    /* background-color: red; */
+    /* take entire space */
+    position: absolute;
+    inset: 0; /* TODO change top: if you have content in nested grid */
+  }
